@@ -47,15 +47,15 @@ public class Login extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        lblpassword = new javax.swing.JLabel();
-        lblusername = new javax.swing.JLabel();
-        password = new javax.swing.JPasswordField();
-        btnlogin = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         username = new javax.swing.JTextField();
+        lblusername = new javax.swing.JLabel();
+        password = new javax.swing.JPasswordField();
+        lblpassword = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        btnlogin = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -128,38 +128,6 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        lblpassword.setBackground(new java.awt.Color(255, 255, 255));
-        lblpassword.setIconTextGap(0);
-
-        lblusername.setBackground(new java.awt.Color(255, 255, 255));
-        lblusername.setForeground(new java.awt.Color(255, 0, 0));
-
-        password.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 2, true));
-        password.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                passwordKeyReleased(evt);
-            }
-        });
-
-        btnlogin.setBackground(new java.awt.Color(102, 102, 102));
-        btnlogin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnlogin.setText("Login");
-        btnlogin.setBorder(null);
-        btnlogin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnloginActionPerformed(evt);
-            }
-        });
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(29, 29, 136));
-        jLabel6.setText("Create a New Account");
-        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel6MouseClicked(evt);
-            }
-        });
-
         jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Riyaz\\Documents\\NetBeansProjects\\demo3\\Photos\\icons8-traveler-100.png")); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Lucida Calligraphy", 1, 24)); // NOI18N
@@ -179,6 +147,38 @@ public class Login extends javax.swing.JFrame {
         username.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 usernameKeyReleased(evt);
+            }
+        });
+
+        lblusername.setBackground(new java.awt.Color(255, 255, 255));
+        lblusername.setForeground(new java.awt.Color(255, 0, 0));
+
+        password.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 2, true));
+        password.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passwordKeyReleased(evt);
+            }
+        });
+
+        lblpassword.setBackground(new java.awt.Color(255, 255, 255));
+        lblpassword.setIconTextGap(0);
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(29, 29, 136));
+        jLabel6.setText("Create a New Account");
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+        });
+
+        btnlogin.setBackground(new java.awt.Color(102, 102, 102));
+        btnlogin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnlogin.setText("Login");
+        btnlogin.setBorder(null);
+        btnlogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnloginActionPerformed(evt);
             }
         });
 
@@ -229,7 +229,7 @@ public class Login extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(26, 26, 26)
@@ -242,8 +242,8 @@ public class Login extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblpassword, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
+                        .addComponent(lblpassword, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6)
                     .addComponent(btnlogin, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
